@@ -15,3 +15,6 @@ dataset_jpg - директория с датасетом Face-Sketch, файлы
  - https://github.com/taey16/pix2pixBEGAN.pytorch - из этого проекта взята основа для класса даталоадера
  - https://github.com/chaofengc/Face-Sketch - из этого проетка взял датасет Face-Sketch
 
+pix2pix_generator_sketches_e1000.pt - предобученная на 1000 итерациях модель из 3-го ноутбука, будет использоваться ботом для генерации скетчей
+
+
