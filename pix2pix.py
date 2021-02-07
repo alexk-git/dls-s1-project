@@ -2,8 +2,6 @@
 from PIL import Image
 import sys
 
-from skimage.color import rgb2gray
-
 import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
@@ -103,7 +101,7 @@ transformation = transforms.Compose(
 
 # Создадим модель из загруженных весов
 sketches_model = Generator().to('cpu')
-sketches_model.load_state_dict(torch.load("pytorch_models/pix2pix_generator_sketches_e{}.pt".format(1000)))
+sketches_model.load_state_dict(torch.load("gdrive/MyDrive/pix2pix/pytorch_models/pix2pix_generator_sketches_e{}.pt".format(1000)))
 sketches_model.eval()
 
 # Загрузим оригинал и проведём с ним необходимые преобразования

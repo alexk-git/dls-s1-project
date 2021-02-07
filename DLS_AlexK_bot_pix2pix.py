@@ -100,7 +100,7 @@ async def get_original_step_2(message):
 @dp.message_handler(commands="work", state="*")
 async def execute_model(message: types.Message):
     await message.reply("Начинаю рисовать скетч, ожидайте одну минутку...")
-    os.system('python.exe pix2pix.py original.jpg')
+    os.system('python3.7 gdrive/MyDrive/pix2pix/pix2pix.py original.jpg')
     with open('output.jpg', 'rb') as photo:
         await message.reply_photo(photo, caption='skatch')
     os.remove('original.jpg')
